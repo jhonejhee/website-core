@@ -3,7 +3,7 @@ from typing import List
 SECRET_KEY = NotImplemented
 DEBUG = False
 
-ALLOWED_HOSTS: List[str] = []
+ALLOWED_HOSTS: List[str] = ['*']
 
 # Application definition
 
