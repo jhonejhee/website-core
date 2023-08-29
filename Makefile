@@ -18,6 +18,10 @@ migrate:
 migrations:
 	poetry run python -m website.manage makemigrations
 
+.PHONY: portfolio-migrations
+portfolio-migrations:
+	poetry run python -m website.manage makemigrations portfolio
+
 .PHONY: run-server
 run-server:
 	poetry run python -m website.manage runserver

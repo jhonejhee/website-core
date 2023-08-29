@@ -68,6 +68,23 @@ files = [
 ]
 
 [[package]]
+name = "django-tailwind"
+version = "3.6.0"
+description = "Tailwind CSS Framework for Django projects"
+optional = false
+python-versions = ">=3.8.1,<4.0.0"
+files = [
+    {file = "django_tailwind-3.6.0-py3-none-any.whl", hash = "sha256:93db0ed1c18ae21ee8ad7f19f96744f5b2322e9d9872307a06e0f45b21cbe60a"},
+    {file = "django_tailwind-3.6.0.tar.gz", hash = "sha256:d878222a4ef957d1d0f0529dcd28b0065995ca6b8c7b43b058b9214c9e7d8ec0"},
+]
+
+[package.dependencies]
+django = ">=3.2.14"
+
+[package.extras]
+reload = ["django-browser-reload (>=1.6.0,<2.0.0)"]
+
+[[package]]
 name = "filelock"
 version = "3.12.2"
 description = "A platform independent file lock."
@@ -109,6 +126,29 @@ files = [
 
 [package.dependencies]
 setuptools = "*"
+
+[[package]]
+name = "npm"
+version = "0.1.1"
+description = "Python bindings and utils for npm."
+optional = false
+python-versions = "*"
+files = [
+    {file = "npm-0.1.1.tar.gz", hash = "sha256:84aefc83a3486d034c4c14f8bcd4b746b95b529289b0d042c268f6201c3034e9"},
+]
+
+[package.dependencies]
+optional-django = "0.1.0"
+
+[[package]]
+name = "optional-django"
+version = "0.1.0"
+description = "Utils for apps to provide optional support for django applications"
+optional = false
+python-versions = "*"
+files = [
+    {file = "optional-django-0.1.0.tar.gz", hash = "sha256:77d6b9fb74bda30583e1af4683a39e0af725cea6003252bba75838f4939326c5"},
+]
 
 [[package]]
 name = "platformdirs"
@@ -258,4 +298,4 @@ test = ["covdefaults (>=2.3)", "coverage (>=7.2.7)", "coverage-enable-subprocess
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.11"
-content-hash = "aab3314372661c5349b8b1fd8018aebf606c66b0177923420d79f59cca906a95"
+content-hash = "55d97b946bce7224f7b5c6d57fb21ca2a86cdc7add83394d43d1b2c372e81377"
