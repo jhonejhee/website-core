@@ -56,7 +56,23 @@ Before starting make sure that you have PIP installed.
 
 
 ### Make a new virtual environment
+> Open your IDE's Terminal. Make sure that your project is open.
 > Name it `venv`
 > ```shell
 > python -m venv venv
 > ```
+> After that, a folder named `venv` shoudl appear on your project directory.
+> Restart your Terminal.
+>
+> > `Poetry` should automatically activate your virtual environment `venv`.
+> > If not, activate it manually using:
+> > ```shell
+> > venv/Scripts/Activate.ps1
+> > ```
+>
+> You should now see `(venv) path/to/ptoject-folder>`.
+> This means that the `venv` is already activated.
+> Installed packages in the virtual environment stays inside that environment and will not be installed in your local system.
+
+
+###
