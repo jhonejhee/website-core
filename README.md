@@ -94,13 +94,13 @@ Before starting make sure that you have PIP installed.
 ---
 
 ### Connect Database (SQLite3)
-#### Update Database Dictionary
+### Update Database Dictionary
 > Go to `website/project/settings/base.py`.
 > Find your `DATABASE` dictionary and change the `'NAME'` into your `db.sqlite3`'s absolute path.
 
 ### Allow host to open your project
 > Go to `website/project/settings/base.py`.
-> Find `ALLOWED_HOSTS` dictionary and put ['*']
+> Find `ALLOWED_HOSTS` dictionary and put `['*']`
 > This means that all host can open your project.
 
 ---
