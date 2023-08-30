@@ -14,6 +14,7 @@
 ![Mobile View](https://github.com/jhonejhee/website-core/assets/91509082/d8180691-e64c-438c-bd0a-487271a70785)
 
 
+
 ## About This Project
 > This project is made using Python, Django, and Tailwind CSS. This project uses SQLite3 for its database.
 > - Python - Backend
@@ -21,8 +22,10 @@
 > - Tailwind CSS - Styling
 
 
+
 ## Use this project
 Before starting make sure that you have PIP installed.
+
 
 ### Clone Repository
 > ```bash
@@ -38,4 +41,22 @@ Before starting make sure that you have PIP installed.
 > ```
 > ```shell
 > cp website/project/settings/templates/settings.dev.py ./local/settings.dev.py
+> ```
+
+
+### Install `Poetry`
+> In your IDE's Terminal or any terminal or shell do:
+> ```shell
+> pip install poetry
+> ```
+> Check installationg by running this:
+> ```shell
+> poetry --version
+> ```
+
+
+### Make a new virtual environment
+> Name it `venv`
+> ```shell
+> python -m venv venv
 > ```
