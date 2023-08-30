@@ -22,3 +22,20 @@
 
 
 ## Use this project
+Before starting make sure that you have PIP installed.
+
+### Clone Repository
+> ```bash
+> git clone https://github.com/jhonejhee/website-core.git
+> ```
+> Now open your project on your IDE.
+
+
+### Make Your `local` folder
+> Open your IDE's Terminal.
+> ```shell
+> mkdir -p local
+> ```
+> ```shell
+> cp website/project/settings/templates/settings.dev.py ./local/settings.dev.py
+> ```
