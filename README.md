@@ -61,7 +61,7 @@ Before starting make sure that you have PIP installed.
 > ```shell
 > python -m venv venv
 > ```
-> After that, a folder named `venv` shoudl appear on your project directory.
+> After that, a folder named `venv` should appear on your project directory.
 > Restart your Terminal.
 >
 > > `Poetry` should automatically activate your virtual environment `venv`.
@@ -92,6 +92,11 @@ Before starting make sure that you have PIP installed.
 > Go to `website/project/settings/base.py`.
 > Find your `DATABASE` dictionary and change the `'NAME'` into your `db.sqlite3`'s absolute path.
 
+### Allow host to open your project
+> Go to `website/project/settings/base.py`.
+> Find `ALLOWED_HOSTS` dictionary and put ['*']
+> This means that all host can open your project.
+
 #### Migrate Database
 > Run this in your virtual environment:
 > ```shell
@@ -102,4 +107,7 @@ Before starting make sure that you have PIP installed.
 > ```shell
 > make migrate
 > ```
-> Note: To see how these commands were made and how they work, see `Makefile` in your project.
+> Note: To see how these `make` commands were made and how they work, see `Makefile` in your project.
+
+
+### 
