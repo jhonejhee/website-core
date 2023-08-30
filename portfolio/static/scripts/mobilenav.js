@@ -11,7 +11,8 @@ const showMenu = () => {
 
 
 
-function clickHandler(e){
+function clickHandler(href){
+
     const navbar = document.getElementById('navbar-default');
     const navbarItems = document.getElementById('navbar-menu-items');
     let navClasses = navbar.classList;
@@ -19,7 +20,7 @@ function clickHandler(e){
     navClasses.toggle("bg-[rgba(0,0,0,0.5)]");
     navClasses.toggle("md:bg-transparent");
     itemClasses.toggle("hidden");
-    const href = e.getAttribute("href");
+
     const offsetTop = document.querySelector(href).offsetTop;
     scroll({
         top: offsetTop,
