@@ -49,6 +49,7 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': 'D:/Django Projects/Testwebsite/my-website/db.sqlite3',
+        # 'NAME': '/home/jhonejhee/website-core/db.sqlite3',
     }
 }
 
