@@ -4,6 +4,7 @@
 - [MobileView](#mobile-view)
 - [About](#about-this-project)
 - [Use the project](#use-this-project)
+`Note:` If there are any problems with the installation or instruction. Reach out to me.
 ---
 
 ## Desktop View
