@@ -1,27 +1,32 @@
-<header class="w-full py-[2vh]">
-    <nav class="flex justify-between items-center w-[90%] md:w-[70%] mx-auto">
-        <div class="text-white">
-            <a class="w-16">
-                <a href="#">
-                    <span>jhonejhee</span>
+{% load static %}
+<script type="application/javascript" src="{% static 'scripts/mobilenav.js' %}"></script>
+<header class="w-full py-[2vh]" id="navbar-default">
+    <nav class="md:flex justify-between items-center w-[90%] md:w-[70%] mx-auto">
+        <div class="flex justify-between items-center">
+            <div class="text-white">
+                <a class="w-16">
+                    <a href="#">
+                        <span>jhonejhee</span>
+                    </a>
                 </a>
-            </a>
+            </div>
+            <button class="md:hidden block" type="button" id="menu-button" onclick="showMenu()">
+                <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+                </svg>
+            </button>
         </div>
-        <button class="md:hidden block" type="button" data-collapse-toggle="navbar-default">
-            <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
-            </svg>
-        </button>
-        <div class="text-white hidden w-full md:block md:w-auto" id="navbar-default">
-            <ul class="flex items-center gap-[2vw]">
-                <li>
-                    <a class="hover:text-gray-200 drop-shadow-2xl" href="#home">HOME</a>
+
+        <div class="text-white w-full md:block hidden md:w-auto md:static absolute md:mt-0 mt-[2vh] left-0 md:bg-transparent bg-[rgba(0,0,0,0.5)] md:py-0 py-4 md:transition-none transition-all ease-in-out duration-500" id="navbar-menu-items">
+            <ul class="flex items-center justify-center md:gap-[2vw] md:flex-row flex-col">
+                <li class="py-2 md:py-0">
+                    <a class="hover:text-gray-200 drop-shadow-2xl" href="#home" onclick="clickHandler(this)">HOME</a>
                 </li>
-                <li>
-                    <a class="hover:text-gray-200 drop-shadow-2xl" href="#techstack">TECH STACK</a>
+                <li class="py-2 md:py-0">
+                    <a class="hover:text-gray-200 drop-shadow-2xl" href="#techstack" onclick="clickHandler(this)">TECH STACK</a>
                 </li>
-                <li>
-                    <a class="hover:text-gray-200 drop-shadow-2xl" href="#projects">PROJECTS</a>
+                <li class="py-2 md:py-0">
+                    <a class="hover:text-gray-200 drop-shadow-2xl" href="#projects" onclick="clickHandler(this)">PROJECTS</a>
                 </li>
             </ul>
         </div>
