@@ -75,4 +75,31 @@ Before starting make sure that you have PIP installed.
 > Installed packages in the virtual environment stays inside that environment and will not be installed in your local system.
 
 
-###
+### Install dependencies
+> Run this in your virtual environment:
+> ```shell
+> poetry update
+> ```
+> and then
+> ```shell
+> poetry install
+> ```
+> This will install all dependencies
+
+
+### Connect Database (SQLite3)
+#### Update Database Dictionary
+> Go to `website/project/settings/base.py`.
+> Find your `DATABASE` dictionary and change the `'NAME'` into your `db.sqlite3`'s absolute path.
+
+#### Migrate Database
+> Run this in your virtual environment:
+> ```shell
+> make migrations
+> ```
+> 
+> After making `migrations` do:
+> ```shell
+> make migrate
+> ```
+> Note: To see how these commands were made and how they work, see `Makefile` in your project.
