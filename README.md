@@ -49,7 +49,7 @@ Before starting make sure that you have PIP installed.
 > ```shell
 > pip install poetry
 > ```
-> Check installationg by running this:
+> Check installation by running this:
 > ```shell
 > poetry --version
 > ```
@@ -110,4 +110,10 @@ Before starting make sure that you have PIP installed.
 > Note: To see how these `make` commands were made and how they work, see `Makefile` in your project.
 
 
-### 
+### Run your project
+> Run this in your virtual environment:
+> ```shell
+> make run-server
+> ```
+> Open the output link in your browser.
+> The link should look like `https://127.0.0.1:8000/`.
