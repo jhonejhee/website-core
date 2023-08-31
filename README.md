@@ -111,7 +111,7 @@ Before starting make sure that you have PIP installed.
 > ```shell
 > make migrations
 > ```
-> 
+>
 > After making `migrations` do:
 > ```shell
 > make migrate
