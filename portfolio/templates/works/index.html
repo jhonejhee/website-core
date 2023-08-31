@@ -1,17 +1,26 @@
 {% load static %}
-<section class="h-screen" id="projects">
-    <div class="h-screen flex items-center">
-        <div class="flex flex-col items-center mx-auto py-[8vh]">
+<section class="h-auto flex item-center justify-center" id="projects">
+    <div class="h-auto flex items-center md:w-[70%] w-[90%]">
+        <div class="flex flex-col items-center mx-auto py-[8vh] w-full">
             <div class="text-center">
                 <h1 class="text-2xl sm:text-4xl md:text-5xl font-bold">Projects</h1>
                 <h3 class="text-base sm:text-xl md:text-2xl font-bold mt-1">Working on it</h3>
             </div>
-            <hr class="h-[4px] w-[100px] bg-accent rounded-full mt-2">
+            <hr class="h-[4px] w-[100px] bg-accent rounded-full mt-2 mb-8">
 
-            <div class="flex items-center justify-center">
-                <div class="">
-                    <img class="h-auto max-w-full rounded-lg p-4" src="{% static 'images/jpg/coding2.jpg' %}" alt="coding">
-                </div>
+            <div class="w-full flex flex-col items-center justify-center gap-16">
+                {# Template #}
+                    <div class="flex flex-col md:flex-row items-center bg-white rounded-lg shadow-xl md:max-w-2xl hover:scale-105 transition-all ease-in-out duration-300">
+                        <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-[50%] md:rounded-none md:rounded-l-lg" src="https://www.dropbox.com/scl/fi/9ax8f7rjn2nc10jqqqx7n/website-core.jpg?rlkey=id4z9fb3j1jzosv151dmi1nfc&raw=1" alt="">
+                        <div class="flex flex-col justify-between p-4 gap-4">
+                            <h5 class="text-xl font-bold">One-Page Website</h5>
+                            <p class="">A dynamic and responsive one-page website created using Python and Django Framework. Designed using Tailwind CSS</p>
+                            <a href="https://github.com/jhonejhee/website-core" target="_blank">
+                                <img class="w-[32px] h-[32px] hover:opacity-50 hover:cursor-pointer" src="https://img.icons8.com/pulsar-line/32/external-link-squared.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                {# End Template #}
             </div>
 
         </div>
