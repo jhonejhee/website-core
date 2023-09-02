@@ -21,6 +21,7 @@
 > - Python - Backend
 > - Django - Framework
 > - Tailwind CSS - Styling
+> NOTE: This project follows some of the tutorial of [`thenewboston`](https://www.youtube.com/@thenewboston) in YouTube
 
 ---
 
